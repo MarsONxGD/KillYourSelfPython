@@ -7,3 +7,10 @@ def main(x):
     dict_x0 = {2012: 8, 1962: dict_x4_down[x[4]], 2001: 12}
     dict_init = {'RUBY': dict_x3[x[3]], 'GENIE': dict_x0[x[0]], 'LATTE': 13}
     return dict_init[x[1]]
+
+
+print(main([1962, 'RUBY', 2020, 1973, 'PAN']))  # 5
+print(main([2001, 'LATTE', 2003, 1958, 'ALLOY']))  # 13
+print(main([1962, 'GENIE', 2003, 1958, 'SLASH']))  # 10
+print(main([2001, 'GENIE', 2020, 1958, 'ALLOY']))  # 12
+print(main([1962, 'RUBY', 2000, 1973, 'SLASH']))  # 3

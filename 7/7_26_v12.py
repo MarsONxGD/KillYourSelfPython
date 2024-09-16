@@ -8,3 +8,10 @@ def main(x):
     dict_x1_down = {'GDB': dict_x3_down[x[3]], 'M4': 10, 'LFE': 11}
     dict_init = {1974: dict_x1_down[x[1]], 2009: dict_x1_up[x[1]]}
     return dict_init[x[2]]
+
+
+print(main(['MAKO', 'LFE', 1974, 'COQ', 'GLYPH']))  # 11
+print(main(['MAKO', 'M4', 1974, 'ASN.1', 'XML']))  # 10
+print(main(['MAKO', 'GDB', 1974, 'ASN.1', 'GLYPH']))  # 8
+print(main(['LASSO', 'LFE', 2009, 'COQ', 'GLYPH']))  # 7
+print(main(['FISH', 'M4', 2009, 'COQ', 'XML']))  # 4

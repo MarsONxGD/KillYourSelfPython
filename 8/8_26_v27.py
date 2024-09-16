@@ -10,3 +10,8 @@ def main(hex_str):
     result = (X5 << 27) + (X3 << 25) + (X4 << 17) + (X1 << 10) + (X2 << 0)
 
     return result
+
+print(main("0xc5dc46e1"))  # 3312944269
+print(main("0x7b4f6696"))  # 2127715021
+print(main("0x1feb07000"))  # 8483766496
+print(main("0x131515e48"))  # 5105853116
